@@ -1,0 +1,37 @@
+###
+GET http://localhost:9000/api/employees
+
+
+###
+GET http://localhost:9000/api/employees/1
+
+
+###
+POST http://localhost:9000/api/employees 
+Content-Type: application/json
+
+{
+    "firstname" : "test",
+    "lastname" : "Fati",
+    "mail" : "test@gmail.com",
+    "position" : "1",
+    "salary" : 2540000,
+    "password" : "azerty"
+}
+
+
+###
+PUT http://localhost:9000/api/employees/1
+Content-Type: application/json
+
+{
+    "firstname" : "Barry",
+    "lastname" : "Abdraman",
+    "mail" : "barry@gmail.com",
+    "position" : "2",
+    "salary" : 3000000000,
+    "password" : "azerty"
+}
+
+###
+DELETE http://localhost:9000/api/employees/1

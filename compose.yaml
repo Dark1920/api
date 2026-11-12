@@ -1,0 +1,15 @@
+services:
+  employee-postgres-db:
+    image: postgres:17-alpine
+    container_name: Employee-postgres-db
+    environment:
+      POSTGRES_DB: db_employee
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: demoPassword2026
+    ports:
+      - "5435:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
